@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400;1,900&display=swap');
+/*Aplico un formato a todos los hipervinculos dentro de una línea */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Modelo Caja */
+    
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 20px;
+    width: vw;
+    height: vw;
+
+}
+
+main {
+    width: 100%;
+}
+
+/*Aplico un formato a todo el contenido del header */
+header {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-menu-logo {
+    user-select: none; /*escondo mi item*/
+    display: none;
+}
+
+.header-logo {
+    cursor: pointer; /*cambia el puntero por una mano*/
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.header-nav-lista {
+    list-style: none; /*borro las viñetas*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Alineo los vinculos en el centro*/
+    margin-left: 0px;
+}
+
+.header-nav-link {
+    padding: 0px 10px ; 
+    background-color: white;
+    margin: 0px 2px;
+    
+} 
+.header-nav-link a {
+    padding: 0px 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none; /*elimino el guion del vinculo*/
+}
+
+/*Inicio de una transicion, luego con :hover indico que atributo es el que cambia*/
+.header-nav-link {
+    transition: all 0.3s ease 0s;
+    padding: 5px 10px;
+}
+
+
+/* Cambio el color de la letra y el fondo de la caja */
+.header-nav-link a:hover {
+    transition-duration: 0.5s;
+    color: white;
+    background-color: black;
+    
+}
+
+.seccion {
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 0px;
+    
+    
+}
+
+
+.seccion-logo {
+    padding: 10px;
+    width: 80%;
+}
+
+.seccion-boton {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 9px 25px;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    }
+.seccion-boton:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 1.3s;
+}
+
+.seccion-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    
+        
+}
+
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 40px;
+}
+
+.rojoyoutube {
+    background-color: #c4302b;
+    width: 100%;
+    }
+
+
+
+.footer {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: black;
+    
+}
+
+.footer-logofran {
+    cursor: pointer; /*cambia el puntero por una mano*/
+    height: 40px;
+    }
+
+.footer-links {
+    list-style: none;
+    }
+
+.footer-links li {
+    display: inline-block;
+    padding: 0px 10px;
+    opacity: 100%;
+    transition: all 0,3s ease 0s;
+    }
+.footer-links li :hover{
+opacity: 60%;
+}
+
+.footer-links li img {
+    height: 30px;
+}
+
+.footer-firma {
+    padding: 0;
+    margin: 0;
+    height: 20px;   
+            
+}
+.footer-firma-imagen {
+    padding: 0;
+ 
+
+}
+
+/*Agrego un SNAP al scroll de mi pagina
+
+.snap-container {
+    height: 100vh;
+    overflow: auto;  
+    scroll-snap-type: y mandatory;
+}
+
+
+.snap-section {
+    scroll-snap-align: start;
+    min-height: 60vh;
+     }
+*/
+
+     
+/* ++++SOBRE MI++++*/
+
+
+
+
+
+
+.intro {
+    display: flex;
+    height: 700px;
+    margin: 40px;
+    padding: 60px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.intro-parrafo-titulo {
+    display: flex;
+    flex-direction: column;
+    height: 421px;
+    order: 2;
+    width: 800px;
+    margin-left: 50px;
+}
+
+.intro-parrafo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+    margin-bottom: 10px;
+    color: #c4302b;
+    
+}
+
+.intro-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro-img {
+    height: 480px;
+    width: auto;
+    margin-top: 80px;
+}
+
+.intro-logo {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.videosPropios {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 315px 315px 315px;
+    grid-template-areas: 
+    "ele1"
+    "ele2"
+    "ele3";
+    row-gap: 70px;
+    margin-top: 100px;
+    
+}
+
+.videosPropios-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.videosPropios-descripcion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.videoPropio-articulo1 {
+    grid-area: ele1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 315px;
+    grid-template-areas: 
+    "video1 texto1";
+    
+}
+.videoPropio-articulo2 {
+    grid-area: ele2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 315px;
+    grid-template-areas: 
+    "texto2 video2" 
+}
+.videoPropio-articulo3 {
+    grid-area: ele3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 315px;
+    grid-template-areas: 
+    "video3 texto3" 
+}
+
+.videoPropio-texto1 {
+    grid-area: texto1;
+    margin-left: 20px;
+    justify-self: left;
+}
+.videoPropio-articulo1 iframe {
+    grid-area: video1;
+    margin-right: 20px;
+    justify-self: flex-end;
+}
+.videoPropio-articulo1 iframe:hover {
+    transition-duration: 0.2s;
+    transform: scale(110%);
+}
+
+.videoPropio-texto2 {
+    grid-area: texto2;
+    margin-right: 20px;
+    justify-self: flex-end;
+}
+.videoPropio-articulo2 iframe {
+    grid-area: video2;
+    margin-left: 20px;
+}
+.videoPropio-articulo2 iframe:hover {
+    transition-duration: 0.2s;
+    transform: scale(110%);
+}
+.videoPropio-texto3 {
+    grid-area: texto3;
+    margin-left: 20px;
+}
+.videoPropio-articulo3 iframe {
+    grid-area: video3;
+    margin-right: 20px;
+    justify-self: flex-end;
+}
+.videoPropio-articulo3 iframe:hover {
+    transition-duration: 0.2s;
+    transform: scale(110%);
+}
+
+/* ++++ILUSTRACIONES++++*/
+
+/*Momentaneamente, creo esta galería animada, porque aún no explicaron como hacer la galería que quiero en el Balsamiq*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 20px;
+    padding: 40px 0;
+}
+.galeria img {
+    width: 100%;
+    height: 252px;
+    vertical-align: top;
+    object-fit: cover;
+    box-shadow: 0 0 6px black;
+    transition: transform 0.5s;
+
+}
+
+.galeria img:hover {
+    transform: rotate(10deg) scale(1.3);
+    }
+
+
+
+    /* ++++YOUTUBE++++ */
+
+
+    .youtube-intro {
+        display: flex;
+        height: 700px;
+        margin: 40px;
+        padding: 60px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .youtube-parrafo-titulo {
+        display: flex;
+        flex-direction: column;
+        height: 421px;
+        order: 2;
+        width: 800px;
+        margin-left: 50px;
+    }
+    
+    .youtube-parrafo {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        
+    }
+    
+    .youtube-titulo {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .youtube-promo {
+        height: 480px;
+        margin-top: 80px;
+    }
+    
+    
+    .youtube-videos {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 315px 315px 315px;
+        grid-template-areas: 
+        "ele1"
+        "ele2"
+        "ele3";
+        row-gap: 70px;
+        margin-top: 100px;
+    }
+    
+    .youtube-titulo {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+    }
+    .youtube-descripcion {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+    }
+    
+    .youtube-articulo1 {
+        grid-area: ele1;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 315px;
+        grid-template-areas: 
+        "video1 texto1";
+        
+    }
+    .youtube-articulo2 {
+        grid-area: ele2;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 315px;
+        grid-template-areas: 
+        "texto2 video2" 
+    }
+    .youtube-articulo3 {
+        grid-area: ele3;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 315px;
+        grid-template-areas: 
+        "video3 texto3" 
+    }
+    
+    .youtube-texto1 {
+        grid-area: texto1;
+        margin-left: 20px;
+        justify-self: left;
+    }
+    .youtube-articulo1 iframe {
+        grid-area: video1;
+        margin-right: 20px;
+        justify-self: flex-end;
+    }
+    .youtube-articulo1 iframe:hover {
+        transition-duration: 0.2s;
+        transform: scale(110%);
+    }
+    
+    .youtube-texto2 {
+        grid-area: texto2;
+        margin-right: 20px;
+        justify-self: flex-end;
+    }
+    .youtube-articulo2 iframe {
+        grid-area: video2;
+        margin-left: 20px;
+    }
+    .youtube-articulo2 iframe:hover {
+        transition-duration: 0.2s;
+        transform: scale(110%);
+    }
+    .youtube-texto3 {
+        grid-area: texto3;
+        margin-left: 20px;
+    }
+    .youtube-articulo3 iframe {
+        grid-area: video3;
+        margin-right: 20px;
+        justify-self: flex-end;
+    }
+    .youtube-articulo3 iframe:hover {
+        transition-duration: 0.2s;
+        transform: scale(110%);}
+
+
+
+        /* ++++INSTAGRAM++++*/
+
+/*Momentaneamente, creo esta galería animada, luego aplicaré una más compleja*/
+
+.main-instagram {
+    height: 1000px;
+    margin-top: 60px;
+}
+.instagram-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 20px;
+    padding: 40px 0;
+}
+.instagram-galeria iframe {
+    vertical-align: top;
+    object-fit: cover;
+    box-shadow: 0 0 6px black;
+    transition: transform 0.9s;
+
+}
+
+.instagram-galeria iframe:hover {
+    transform: rotate(360deg) scale(1.5);
+    }
+
+.instagram-intro {
+    display: flex;
+}
+
+.instagram-intro-nombre {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    order: 2;
+    align-self: center;
+}
+
+.instagram-intro-logo {
+    height: 40px;
+    order: -1;
+    align-self: center;
+    margin-right: 10px;
+
+}
+
+/* COMIENZO A TRABAJAR RESPONSIVE */
+
+.header-nav-link-close {  /*Escondo el boton de cierre de menu celular*/
+    display: none
+}
+
+@media screen and (max-width: 1024px) {
+
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-nav-link a {
+        font-size: 15px;
+    }
+
+    .header-nav-link {
+        padding: 3px 1px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+    
+    .seccion {
+        height: 400px;
+        margin: 0;
+    }
+
+    .seccion-div {
+        width: 400px;
+    }
+/* RESPONSIVE "Sobre Mi" */
+
+    .intro {
+        padding: 0;
+}
+
+}
+
+/* Es importante el orden de las medias querys para que se pisen */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        flex-direction: row; 
+    }
+
+    .header-logo {
+        margin-left: 30px;
+    }
+
+    .header-nav-lista {
+        display: none;
+        padding-top: 50%;
+        box-shadow: 0 0 6px black;
+        
+    }
+
+    .header-menu {
+        display: block;
+        text-decoration: none;
+        color: red;
+        font-size: 35px;
+    }
+
+    .header-nav-link {
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    .header-nav-link a {
+        color: black;
+    }
+
+    .header-menu-logo {
+        align-self: flex-end;
+        display: block;
+        width: 40px;
+    }
+
+    .seccion {
+        height: auto;
+    }
+
+    .seccion-logo {
+        width: 90%;
+    }
+
+    .seccion-div {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .seccion-boton {
+        font-size: 18px;
+    }
+
+    #menu {
+        display: block;
+        background-color: white ;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: right 2s;
+        
+    }
+
+    #menu:target {
+        right: 0%;
+    }
+
+    .header-img-close {
+        width: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+/* Paso a trabajar pagina Sobre Mi */
+
+    .intro {
+        padding: 0;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- versión del documento de HTML5-->
+<html lang="en">
+<!-- inicio del documento (html)-->
+
+<head>
+    <!-- es la partee privada del documento-->
+    <!-- Meta se le llama a todos los parámetros que le pasamos a la pagina-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KleinFran</title> <!-- Es el nombre de la pestaña del navegador-->
+    <link rel="icon" href="./img/logopage.PNG"> <!-- Agrego un icono en la pestaña-->
+    <!--Linkeo la pagina de CSS para aplicar los estilos que voy definiendo-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--link font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+
+</head> <!-- Cierre de la parte privada-->
+
+<body>
+    <!--aca va todo lo visible de la página-->
+    <header>
+        <div>
+            <a href="./index.html"> <img class="header-logo" src="./img/logopage.PNG" alt="Logo Fran"> </a>
+        </div>
+        <nav class="header-nav">
+            <!--enmarco mi barra de navegación-->
+            <ul class="header-nav-lista" id="menu">
+                <li class="header-nav-link"><a href="./index.html">inicio</a></li>
+                <li class="header-nav-link"><a href="./pages/sobremi.html">Sobre mi</a></li>
+                <li class="header-nav-link"><a href="./pages/ilustraciones.html">Ilustraciones</a></li>
+                <li class="header-nav-link"><a href="./pages/youtube.html">Youtube</a></li>
+                <li class="header-nav-link"><a href="./pages/instagram.html">Instagram</a></li>
+                <li class="header-nav-link header-nav-link-close"><a href="#"> <img class="header-img-close" src="./img/close-icon.png" alt="icono cierre"></a></li>
+            </ul>
+        </nav>
+        <!-- Creo un divisor invisble-->
+        <a href="#menu" class="header-menu">
+            <img class="header-menu-logo" src="./img/menu.png"></img>
+        </a>
+    </header>
+    <main>
+        <!-- representa el contenido principal a mostrar-->
+        <section class="seccion">
+            <!--SOBRE MI-->
+            <div class="seccion-div">
+                <!--agrego imagen Logo-->
+                <img class="seccion-logo" src="./img/1sobremi.png" alt="Logo sobre mi">
+            </div>
+            <div class="seccion-div">
+                <div>
+                <!--agrego boton de navegacion a la página-->
+                <form method="get" action="./pages/sobremi.html">
+                    <button class="seccion-boton" type="submit">Sobre Mi </button>
+                </form>
+            </div>
+
+        </section>
+        <section class="seccion">
+            <!--ILUSTRACIONES-->
+            <div class="seccion-div">
+                <!--agrego imagen Logo-->
+                <img class="seccion-logo" src="./img/3mascotas.png" alt="Logo ilustraciones">
+            </div>
+            <div class="seccion-div">
+                <div>
+                <!--agrego boton de navegacion a la página-->
+                <form method="get" action="./pages/ilustraciones.html">
+                    <button class="seccion-boton" type="submit">Ilustraciones</button>
+                </form>
+            </div>
+        </section>
+        <section class="seccion rojoyoutube">
+            <!--YOUTUBE-->
+            <div class="seccion-div">
+                <!--agrego imagen Logo-->
+                <img class="seccion-logo" src="./img/5youtube.png" alt="Logo Youtube">
+            </div>
+            <div class="seccion-div">
+                <!--agrego boton de navegacion a la página-->
+            <form method="get" action="./pages/youtube.html">
+                <button class="seccion-boton" type="submit">Youtube</button>
+            </form>
+            <div>
+
+        </section>
+        <section class="seccion">
+            <!--INSTAGRAM-->
+            <div class="seccion-div">
+                <!--agrego imagen Logo-->
+                <img class="seccion-logo" src="./img/4instagram.png" alt="Logo Instagram">
+            </div>
+            <div class="seccion-div">
+                <div>
+                <!--agrego boton de navegacion a la página-->
+                <form method="get" action="./pages/instagram.html">
+                    <button class="seccion-boton" type="submit">Instagram</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+        <img class="footer-logofran" src="./img/kleinfran-footer.png" alt="Logo Fran">
+        </div>
+        <div>
+            <ul class="footer-links">
+                <li><a href="https://www.behance.net/kleinfran" target="blank">
+                        <img src="./img/behance-logo.png" alt="logo behance">
+                    </a></li>
+                <li><a href="mailto:kleinfran@gmail.com" target="blank">
+                        <img src="./img/correo-logo.png" alt="logo correo">
+                    </a></li>
+                <li><a href="https://www.youtube.com/c/FranKlein" target="blank">
+                        <img src="./img/youtube-logo.png" alt="logo youtube" >
+                    </a></li>
+                <li><a href="https://www.instagram.com/kleinfrandraws/" target="blank">
+                        <img src="./img/instagram-logo.png" alt="logo instagram" >
+                    </a></li>
+            </ul>
+        </div>
+        <div class="footer-firma">
+            <a href="https://www.instagram.com/migue.laco/" target="blank"> <img class="footer-firma-imagen" src="./img/laco2.jpeg" alt="laco"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
