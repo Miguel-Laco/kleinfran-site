@@ -20,18 +20,19 @@
         </div>
         <nav class="header-nav">
             <!--enmarco mi barra de navegación-->
-            <ul class="header-nav-lista">
+            <ul class="header-nav-lista" id="menu">
                 <li class="header-nav-link"><a href="../index.html">inicio</a></li>
                 <li class="header-nav-link"><a href="./sobremi.html">Sobre mi</a></li>
                 <li class="header-nav-link"><a href="./ilustraciones.html">Ilustraciones</a></li>
                 <li class="header-nav-link"><a href="./youtube.html">Youtube</a></li>
                 <li class="header-nav-link"><a href="./instagram.html">Instagram</a></li>
+                <li class="header-nav-link header-nav-link-close"><a href="#"> <img class="header-img-close" src="../img/close-icon.png" alt="icono cierre"></a></li>
             </ul>
         </nav>
         <!-- Creo un divisor invisble-->
-        <div>
-            <p class="invisible">3</p>
-        </div>
+        <a href="#menu" class="header-menu">
+            <img class="header-menu-logo" src="../img/menu.png"></img>
+        </a>
     </header>
     <main class="youtube-intro">
         <div class="youtube-parrafo-titulo">
@@ -39,31 +40,37 @@
             <p class="youtube-parrafo">Viajes. Familia. Humor. Animacion. De todo un poco, como la vida misma. GoPro en mano, siempre. Pase y vea</p>
         </div>
         <div class="youtube-promo"> <!--VIDEO PRINCIPAL-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/j2XDa6fehEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/j2XDa6fehEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </main>
     <section class="youtube-videos"> <!-- En esta sección irán todos los trabajos realizados. Hoy coloco algunos, a modo de referencia-->
         <article class="youtube-articulo1"> <!--Suiza-->
             <div class="youtube-texto1">
-            <h2 class="youtube-titulo">Merci pour tout! - Navidades en Ginebra</h2>
-            <h5 class="youtube-descripcion">¡Este año llevamos las navidades a otra dimensión!
-                Una aventura llena de manjares, risas y silencios.</h5>
+            <h4 class="youtube-titulo">Merci pour tout! - Navidades en Ginebra</h4>
+            <p class="youtube-descripcion">¡Este año llevamos las navidades a otra dimensión!
+                Una aventura llena de manjares, risas y silencios.</p>
             </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/I9E6537i4as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="youtube-iframe">
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/I9E6537i4as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </article>
         <article class="youtube-articulo2"> <!--Messi saluda-->
             <div class="youtube-texto2">
-            <h2 class="youtube-titulo">Leo Messi me saluda por mi cumpleaños</h2>
-            <h5 class="youtube-descripcion">Edicion de video con After Effects</h5>
+            <h4 class="youtube-titulo">Leo Messi me saluda por mi cumpleaños</h4>
+            <p class="youtube-descripcion">Edicion de video con After Effects</p>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/coudx6kv5Y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="youtube-iframe">
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/coudx6kv5Y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </article>
         <article class="youtube-articulo3"> <!--Berlin-->
             <div class="youtube-texto3">
-            <h2 class="youtube-titulo">Der berliner Fernsehturm</h2>
-            <h5 class="youtube-descripcion">Edicion de videos en After Effects, con graficos vectoriales creados en Adobe Illustrator</h5>
+            <h4 class="youtube-titulo">Der berliner Fernsehturm</h4>
+            <p class="youtube-descripcion">Edicion de videos en After Effects, con graficos vectoriales creados en Adobe Illustrator</p>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LpFCM7iyiLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="youtube-iframe">
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/LpFCM7iyiLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </article>
     </section>
     <footer class="footer">

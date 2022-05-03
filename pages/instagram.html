@@ -20,18 +20,19 @@
         </div>
         <nav class="header-nav">
             <!--enmarco mi barra de navegación-->
-            <ul class="header-nav-lista">
+            <ul class="header-nav-lista" id="menu">
                 <li class="header-nav-link"><a href="../index.html">inicio</a></li>
                 <li class="header-nav-link"><a href="./sobremi.html">Sobre mi</a></li>
                 <li class="header-nav-link"><a href="./ilustraciones.html">Ilustraciones</a></li>
                 <li class="header-nav-link"><a href="./youtube.html">Youtube</a></li>
                 <li class="header-nav-link"><a href="./instagram.html">Instagram</a></li>
+                <li class="header-nav-link header-nav-link-close"><a href="#"> <img class="header-img-close" src="../img/close-icon.png" alt="icono cierre"></a></li>
             </ul>
         </nav>
         <!-- Creo un divisor invisble-->
-        <div>
-            <p class="invisible">3</p>
-        </div>
+        <a href="#menu" class="header-menu">
+            <img class="header-menu-logo" src="../img/menu.png"></img>
+        </a>
     </header>
     <main class="main-instagram">
         <div class="instagram-intro">
@@ -39,18 +40,11 @@
         <img class="instagram-intro-logo" src="../img/instagram-logo-black.png" alt="logo instagram">
         </div> 
         <section class="instagram-galeria"> <!-- Esta sección representará una galería de posts de instagram. No sé si lo dejaré así o pondré una imágen estática, con un link-->
-            <div>
-                <iframe height="350" src="https://www.instagram.com/p/CLZeCSlhGg9/embed" frameborder="0"></iframe>
-            </div>
-            <div>
-                <iframe height="350" src="https://www.instagram.com/p/CH5Zy2OBp4Z/embed" frameborder="0"></iframe>
-            </div>
-            <div>
-                <iframe height="350" src="https://www.instagram.com/p/CH5Zqi4Blp4/embed" frameborder="0"></iframe>
-            </div>
-            <div>
-                <iframe height="350" src="https://www.instagram.com/p/CH5Zb1DhaLP/embed" frameborder="0"></iframe>
-            </div>
+            <iframe height="350" src="https://www.instagram.com/p/CLZeCSlhGg9/embed" frameborder="0"></iframe>
+            <iframe height="350" src="https://www.instagram.com/p/CH5Zy2OBp4Z/embed" frameborder="0"></iframe>
+            <iframe height="350" src="https://www.instagram.com/p/CH5Zqi4Blp4/embed" frameborder="0"></iframe>
+            <iframe height="350" src="https://www.instagram.com/p/CH5Zb1DhaLP/embed" frameborder="0"></iframe>
+            
         </section>
     </main>
     <footer class="footer">
