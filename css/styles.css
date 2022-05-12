@@ -244,14 +244,14 @@ header {
 }
 
 .instagram-galeria iframe:hover {
-    transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.1);
 }
 
 .instagram-intro {
     display: flex;
     margin-left: 1rem;
 }
-*/
+
 .instagram-intro-nombre {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
@@ -345,7 +345,7 @@ header {
     /*RESPONSIVE "Instagram" 768*/
 
     .instagram-galeria iframe:hover {
-        transform: rotate(360deg) scale(1.1);
+        transform: rotate(0) scale(1.1);
     }
 }
 
