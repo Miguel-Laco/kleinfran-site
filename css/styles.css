@@ -212,7 +212,9 @@ header {
     object-fit: contain;
 }
 
-
+.galeria {
+    height: 90vw;
+}
 /* ++++YOUTUBE++++ */
 
 .youtube-articulo1 iframe:hover {
@@ -242,7 +244,7 @@ header {
 }
 
 .instagram-galeria iframe:hover {
-    transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.2);
 }
 
 .instagram-intro {
@@ -327,16 +329,7 @@ header {
         order: 1!important;
     }
 
-    /*RESPONSIVE "Ilustraciones" 768*/
 
-    .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }
-
-    .galeria img:hover {
-        transform: rotate(5deg) scale(1.2);
-    }
 
     /*RESPONSIVE "Youtube" 768*/
 
@@ -352,7 +345,7 @@ header {
     /*RESPONSIVE "Instagram" 768*/
 
     .instagram-galeria iframe:hover {
-        transform: rotate(360deg) scale(1.2);
+        transform: rotate(360deg) scale(1.1);
     }
 }
 
@@ -425,6 +418,10 @@ header {
         padding-bottom: 5px;
     }
 
+    .footer-firma-imagen {
+        vertical-align: super;
+    }
+
     /* RESPONSIVE "Sobre Mi" 480*/
 
     .intro {
@@ -447,16 +444,6 @@ header {
         margin-left: 1rem;
     }
 
-    /*RESPONSIVE "Ilustraciones" 480*/
-
-    .galeria {
-        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-        margin: 2.6rem;
-    }
-
-    .galeria img:hover {
-        transform: scale(1.1);
-    }
 
     /*RESPONSIVE "Youtube" 480*/
 
@@ -475,10 +462,6 @@ header {
     } */
 
     /*RESPONSIVE "Instagram" 480*/
-
-    .instagram-galeria {
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }
 
     .instagram-galeria iframe:hover {
         transform: rotate(360deg) scale(1.1);
