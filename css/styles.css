@@ -238,7 +238,7 @@ header {
 
 
 .instagram-galeria iframe {
-    object-fit: contain;
+    object-fit: cover;
     box-shadow: 0 0 6px black;
     transition: transform 0.9s;
 }
@@ -464,6 +464,6 @@ header {
     /*RESPONSIVE "Instagram" 480*/
 
     .instagram-galeria iframe:hover {
-        transform: rotate(360deg) scale(1.1);
+        transform: rotate(0) scale(1.1);
     }
 }
