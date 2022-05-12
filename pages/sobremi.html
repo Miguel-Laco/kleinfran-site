@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KleinFran</title> <!-- Es el nombre de la pestaña del navegador-->
     <link rel="icon" href="../img/logopage.PNG"> <!-- Agrego un icono en la pestaña-->
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Linkeo la pagina de CSS para aplicar los estilos que voy definiendo-->
     <link rel="stylesheet" href="../css/styles.css">
     <!--link font-->
@@ -34,7 +36,7 @@
             <img class="header-menu-logo" src="../img/menu.png"></img>
         </a>
     </header>
-    <!-- <main class="intro-main"> -->
+    
         <main class="intro">   <!--Presentación Fran-->
             <div class="intro-parrafo-titulo">
                 <h1 class="intro-titulo">Sobre mi</h1> 
@@ -47,32 +49,38 @@
                     Un abrazo!</p>
                 <img class="intro-logo" src="../img/logopage.PNG" alt="logo Fran">
             </div>
-            <div class="intro-imagen">
-                <img class="intro-img" src="../img/foto-fran.png" alt="Foto Fran" >
+            <div class="intro-imagen p-3">
+                <img class="intro-img rounded-3" src="../img/foto-fran.png" alt="Foto Fran" >
             </div>
         </main>
     <!-- </main> -->
-    <section class="videosPropios"> <!--sección de videos de Fran-->
-        <article class="videoPropio-articulo1">
-            <div class="videoPropio-texto1">
-                <h2 class="videosPropios-titulo">Brasil 2014</h2>
-                <h5 class="videosPropios-descripcion">Copa Mundial de la FIFA</h5>
+    <section class="container my-5"> <!--sección de videos de Fran-->
+        <article class="videoPropio-articulo1 row justify-content-center my-5">
+            <div class="col-12 col-md-6">
+                <h2 class="text-center fw-bold">Brasil 2014</h2>
+                <h5 class="text-center">Copa Mundial de la FIFA</h5>
             </div>
-            <iframe width="80%" height="315" src="https://www.youtube.com/embed/xv0VW5NyDxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-12 col-md-6 text-center">
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/xv0VW5NyDxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </article>
-        <article class="videoPropio-articulo2">
-            <div class="videoPropio-texto2">
-                <h2 class="videosPropios-titulo">Rusia 2018</h2>
-                <h5 class="videosPropios-descripcion">Copa Mundial de la FIFA</h5>
+        <article class="videoPropio-articulo2 row justify-content-center my-5">
+            <div class="videoPropio-texto2 col-12 col-md-6 order-2">
+                <h2 class="text-center fw-bold">Rusia 2018</h2>
+                <h5 class="text-center">Copa Mundial de la FIFA</h5>
             </div>
-            <iframe width="80%" height="315" src="https://www.youtube.com/embed/YqSuxrktzD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-12 col-md-6 text-center order-1">
+            <iframe width="90%" height="315" src="https://www.youtube.com/embed/YqSuxrktzD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </article>
-        <article class="videoPropio-articulo3">
-            <div class="videoPropio-texto3">
-                <h2 class="videosPropios-titulo">Sudafrica 2020</h2>
-                <h5 class="videosPropios-descripcion">Voluntariado en DIY Wild</h5>
+        <article class="videoPropio-articulo3 row justify-content-center my-5">
+            <div class="col-12 col-md-6">
+                <h2 class="text-center fw-bold">Sudafrica 2020</h2>
+                <h5 class="text-center">Voluntariado en DIY Wild</h5>
             </div>
-            <iframe width="80%" height="315" src="https://www.youtube.com/embed/nv6FB0kBHa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-12 col-md-6 text-center">
+            <iframe width="90%" height="315" src="https://www.youtube.com/embed/nv6FB0kBHa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </article>
     </section>
     <footer class="footer">
@@ -99,5 +107,7 @@
             <a href="https://www.instagram.com/migue.laco/" target="blank"> <img class="footer-firma-imagen" src="../img/laco2.jpeg" alt="laco"></a>
         </div>
     </footer>
+    <!-- Link Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

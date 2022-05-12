@@ -10,12 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KleinFran</title> <!-- Es el nombre de la pestaña del navegador-->
     <link rel="icon" href="./img/logopage.PNG"> <!-- Agrego un icono en la pestaña-->
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Linkeo la pagina de CSS para aplicar los estilos que voy definiendo-->
     <link rel="stylesheet" href="./css/styles.css">
     <!--link font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+    
 
 </head> <!-- Cierre de la parte privada-->
 
@@ -41,62 +44,58 @@
             <img class="header-menu-logo" src="./img/menu.png"></img>
         </a>
     </header>
-    <main>
-        <!-- representa el contenido principal a mostrar-->
-        <section class="seccion">
-            <!--SOBRE MI-->
-            <div class="seccion-div">
+    <main class=".container-fluid my-2 text-center">
+        <!-- representa el contenido principal a mostrar seccion-->
+        <section class="row justify-content-center p-3"> 
+            <!--SOBRE MI seccion-div-->
+            <div class="col-12 col-md-12">
                 <!--agrego imagen Logo-->
-                <img class="seccion-logo" src="./img/1sobremi.png" alt="Logo sobre mi">
+                <img class="img-fluid" src="./img/1sobremi.png" alt="Logo sobre mi">
             </div>
-            <div class="seccion-div">
-                <div>
-                <!--agrego boton de navegacion a la página-->
+            <div class="col-12 col-md-12 my-5">
+                <!--agrego boton de navegacion a la página (Modificado con Bootstrap)-->
                 <form method="get" action="./pages/sobremi.html">
-                    <button class="seccion-boton" type="submit">Sobre Mi </button>
+                    <button class="btn btn-outline-dark" type="submit">Sobre Mi </button>
                 </form>
             </div>
-
         </section>
-        <section class="seccion">
+        <section class="row justify-content-center p-3">
             <!--ILUSTRACIONES-->
-            <div class="seccion-div">
+            <div class="col-12 col-md-12">
                 <!--agrego imagen Logo-->
-                <img class="seccion-logo" src="./img/3mascotas.png" alt="Logo ilustraciones">
+                <img class="img-fluid" src="./img/3mascotas.png" alt="Logo ilustraciones">
             </div>
-            <div class="seccion-div">
-                <div>
-                <!--agrego boton de navegacion a la página-->
+            <div class="col-12 col-md-12 my-5">
+                <!--agrego boton de navegacion a la página (Modificado con Bootstrap)-->
                 <form method="get" action="./pages/ilustraciones.html">
-                    <button class="seccion-boton" type="submit">Ilustraciones</button>
+                    <button class="seccion-boton btn btn-outline-dark" type="submit">Ilustraciones</button>
                 </form>
             </div>
         </section>
-        <section class="seccion rojoyoutube">
+        <section class="row justify-content-center rojoyoutube p-3">
             <!--YOUTUBE-->
-            <div class="seccion-div">
+            <div class="col-12 col-md-12">
                 <!--agrego imagen Logo-->
-                <img class="seccion-logo" src="./img/5youtube.png" alt="Logo Youtube">
+                <img class="img-fluid" src="./img/5youtube.png" alt="Logo Youtube">
             </div>
-            <div class="seccion-div">
-                <!--agrego boton de navegacion a la página-->
+            <div class="col-12 col-md-12 my-5">
+                <!--agrego boton de navegacion a la página (Modificado con Bootstrap)-->
             <form method="get" action="./pages/youtube.html">
-                <button class="seccion-boton" type="submit">Youtube</button>
+                <button class="btn btn-outline-light" type="submit">Youtube</button>
             </form>
             <div>
 
         </section>
-        <section class="seccion">
+        <section class="row justify-content-center p-3">
             <!--INSTAGRAM-->
-            <div class="seccion-div">
+            <div class="col-12 col-md-12">
                 <!--agrego imagen Logo-->
-                <img class="seccion-logo" src="./img/4instagram.png" alt="Logo Instagram">
+                <img class="img-fluid" src="./img/4instagram.png" alt="Logo Instagram">
             </div>
-            <div class="seccion-div">
-                <div>
-                <!--agrego boton de navegacion a la página-->
+            <div class="ol-12 col-md-12 my-5">
+                <!--agrego boton de navegacion a la página (Modificado con Bootstrap)-->
                 <form method="get" action="./pages/instagram.html">
-                    <button class="seccion-boton" type="submit">Instagram</button>
+                    <button class="seccion-boton btn btn-outline-dark" type="submit">Instagram</button>
                 </form>
             </div>
         </section>
@@ -125,6 +124,8 @@
             <a href="https://www.instagram.com/migue.laco/" target="blank"> <img class="footer-firma-imagen" src="./img/laco2.jpeg" alt="laco"></a>
         </div>
     </footer>
+    <!-- Link Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

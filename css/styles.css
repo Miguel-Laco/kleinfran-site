@@ -86,68 +86,10 @@ header {
 
 }
 
-.seccion {
-    height: 750px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    align-items: center;
-    margin-bottom: 0px;
-
-
-}
-
-
-.seccion-logo {
-    padding: 10px;
-    width: 80%;
-}
-
-.seccion-boton {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 9px 25px;
-    background-color: white;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0, 3s ease 0s;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.seccion-boton:hover {
-    background-color: black;
-    color: white;
-    transition-duration: 1.3s;
-}
-
-.seccion-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-
-
-}
-
-
-h1 {
-    font-family: 'Poppins';
-    font-size: 40px;
-}
-
 .rojoyoutube {
     background-color: #c4302b;
-    width: 100%;
+    padding-top: 2rem;
 }
-
-
 
 .footer {
     margin: 0;
@@ -195,8 +137,6 @@ h1 {
 
 .footer-firma-imagen {
     padding: 0;
-
-
 }
 
 /* ++++SOBRE MI++++*/
@@ -211,8 +151,6 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .intro-parrafo-titulo {
@@ -221,95 +159,28 @@ h1 {
     height: 100%;
     order: 2;
     width: 100%;
-
 }
 
 .intro-parrafo {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2vw;
     margin-bottom: 10px;
-
-
 }
 
 .intro-titulo {
     font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     margin-bottom: 3rem;
+    font-weight: bold;
 }
 
 .intro-img {
     max-height: 100%;
     width: 100%;
-    padding: 40px;
 }
 
 .intro-logo {
     width: 3rem;
-}
-
-.videosPropios {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 315px 315px 315px;
-    grid-template-areas:
-        "ele1"
-        "ele2"
-        "ele3";
-    row-gap: 70px;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-
-}
-
-.videosPropios-titulo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3vw;
-}
-
-.videosPropios-descripcion {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5vw;
-}
-
-.videoPropio-articulo1 {
-    grid-area: ele1;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 315px;
-    grid-template-areas:
-        "video1 texto1";
-
-}
-
-.videoPropio-articulo2 {
-    grid-area: ele2;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 315px;
-    grid-template-areas:
-        "texto2 video2"
-}
-
-.videoPropio-articulo3 {
-    grid-area: ele3;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 315px;
-    grid-template-areas:
-        "video3 texto3"
-}
-
-.videoPropio-texto1 {
-    grid-area: texto1;
-    margin-left: 20px;
-    justify-self: left;
-}
-
-.videoPropio-articulo1 iframe {
-    grid-area: video1;
-    margin-right: 20px;
-    justify-self: flex-end;
 }
 
 .videoPropio-articulo1 iframe:hover {
@@ -317,31 +188,9 @@ h1 {
     transform: scale(110%);
 }
 
-.videoPropio-texto2 {
-    grid-area: texto2;
-    margin-right: 20px;
-    justify-self: flex-end;
-}
-
-.videoPropio-articulo2 iframe {
-    grid-area: video2;
-    margin-left: 20px;
-}
-
 .videoPropio-articulo2 iframe:hover {
     transition-duration: 0.2s;
     transform: scale(110%);
-}
-
-.videoPropio-texto3 {
-    grid-area: texto3;
-    margin-left: 20px;
-}
-
-.videoPropio-articulo3 iframe {
-    grid-area: video3;
-    margin-right: 20px;
-    justify-self: flex-end;
 }
 
 .videoPropio-articulo3 iframe:hover {
@@ -351,169 +200,29 @@ h1 {
 
 /* ++++ILUSTRACIONES++++*/
 
-/*Momentaneamente, creo esta galería animada, porque aún no explicaron como hacer la galería que quiero en el Balsamiq*/
+/*Finalmente, aplico la galería que tenía planificada en Balsamiq desde Bootstrap*/
 
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    margin: 4rem;
-    grid-gap: 1rem;
-}
 
-.galeria img {
-    height: 252px;
-    width: 100%;
-    vertical-align: top;
+.carousel-item img {
     box-shadow: 0 0 6px black;
-    transition: transform 0.5s;
     object-fit: cover;
-
+    height: 45vw;
 }
-
-.galeria img:hover {
-    transform: rotate(10deg) scale(1.3);
+.zapallo img {
+    object-fit: contain;
 }
-
 
 
 /* ++++YOUTUBE++++ */
-
-
-.youtube-intro {
-    display: flex;
-    height: 30rem;
-    margin-top: 5rem;
-    padding: 60px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.youtube-parrafo-titulo {
-    display: flex;
-    flex-direction: column;
-    height: 421px;
-    order: 2;
-    width: 100vw;
-    margin-left: 50px;
-}
-
-.youtube-parrafo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    margin-bottom: 10px;
-
-}
-
-.youtube-titulo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1vw;
-    margin-bottom: 20px;
-}
-
-.youtube-promo {
-    height: 480px;
-    min-width: 500px;
-    margin-top: 80px;
-}
-
-
-.youtube-videos {
-    padding: 30px;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 315px 315px 315px;
-    grid-template-areas:
-        "ele1"
-        "ele2"
-        "ele3";
-    row-gap: 70px;
-    margin-top: 5rem;
-}
-
-.youtube-titulo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3vw;
-}
-
-.youtube-descripcion {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-}
-
-.youtube-articulo1 {
-    grid-area: ele1;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 315px;
-    grid-template-areas:
-        "video1 texto1";
-
-}
-
-.youtube-articulo2 {
-    grid-area: ele2;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 315px;
-    grid-template-areas:
-        "texto2 video2"
-}
-
-.youtube-articulo3 {
-    grid-area: ele3;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 315px;
-    grid-template-areas:
-        "video3 texto3"
-}
-
-.youtube-texto1 {
-    grid-area: texto1;
-    margin-left: 20px;
-    justify-self: left;
-}
-
-.youtube-articulo1 iframe {
-    grid-area: video1;
-    margin-right: 20px;
-    justify-self: flex-end;
-}
 
 .youtube-articulo1 iframe:hover {
     transition-duration: 0.2s;
     transform: scale(110%);
 }
 
-.youtube-texto2 {
-    grid-area: texto2;
-    margin-right: 20px;
-    justify-self: flex-end;
-}
-
-.youtube-articulo2 iframe {
-    grid-area: video2;
-    margin-left: 20px;
-}
-
 .youtube-articulo2 iframe:hover {
     transition-duration: 0.2s;
     transform: scale(110%);
-}
-
-.youtube-texto3 {
-    grid-area: texto3;
-    margin-left: 20px;
-}
-
-.youtube-articulo3 iframe {
-    grid-area: video3;
-    margin-right: 20px;
-    justify-self: flex-end;
 }
 
 .youtube-articulo3 iframe:hover {
@@ -525,30 +234,11 @@ h1 {
 
 /* ++++INSTAGRAM++++*/
 
-/*Momentaneamente, creo esta galería animada, luego aplicaré una más compleja*/
-
-.main-instagram {
-    height: 100%;
-    margin-top: 60px;
-}
-
-.instagram-galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    margin: 2rem;
-    object-fit: cover;
-    height: auto;
-    justify-items: center;
-    gap: 2rem;
-    
-}
 
 .instagram-galeria iframe {
-    
     object-fit: contain;
     box-shadow: 0 0 6px black;
     transition: transform 0.9s;
-
 }
 
 .instagram-galeria iframe:hover {
@@ -559,11 +249,10 @@ h1 {
     display: flex;
     margin-left: 1rem;
 }
-
+*/
 .instagram-intro-nombre {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    margin-bottom: 10px;
     order: 2;
     align-self: center;
 }
@@ -574,7 +263,7 @@ h1 {
     align-self: center;
     margin-right: 10px;
 
-}
+} 
 
 /* COMIENZO A TRABAJAR RESPONSIVE */
 
@@ -598,15 +287,7 @@ h1 {
     .videosPropios iframe {
         max-width: 90%;
     }
-
-    /*RESPONSIVE "Youtube" 1024*/
-
-    .youtube-promo {
-        min-width: 50vw;
-    }
-
 }
-
 
 @media screen and (max-width: 768px) {
     header {
@@ -625,14 +306,7 @@ h1 {
         display: none;
     }
 
-    .seccion {
-        height: 400px;
-        margin: 0;
-    }
 
-    .seccion-div {
-        width: 400px;
-    }
 
     /* RESPONSIVE "Sobre Mi" 768*/
 
@@ -648,17 +322,9 @@ h1 {
     .intro-logo {
         width: 2rem;
     }
-
-    .videoPropio-articulo1 {
-        grid-template-columns: 70% 30%;
-    }
-
-    .videoPropio-articulo2 {
-        grid-template-columns: 30% 70%;
-    }
-
-    .videoPropio-articulo3 {
-        grid-template-columns: 70% 30%;
+    
+    .videoPropio-texto2 {
+        order: 1!important;
     }
 
     /*RESPONSIVE "Ilustraciones" 768*/
@@ -674,50 +340,14 @@ h1 {
 
     /*RESPONSIVE "Youtube" 768*/
 
-    .youtube-titulo {
-        align-self: center;
-        margin-top: 0;
+    .youtube {
+        order: 1!important;
     }
 
-    .youtube-parrafo {
-        align-self: center;
-        padding: 1rem;
+    .youtube-texto2 {
+        order: 1!important;
     }
 
-    .youtube-intro {
-        padding: 0;
-        flex-direction: column-reverse;
-        height: 350px;
-    }
-
-    .youtube-promo {
-        align-items: center;
-        margin-top: 1rem;
-        width: 90%;
-        align-self: center;
-    }
-
-    .youtube-iframe {
-        justify-self: center;
-        align-self: center;
-        width: 60vw;
-    }
-
-    .youtube-parrafo-titulo {
-        margin-left: 0;
-    }
-
-    .youtube-articulo1 {
-        grid-template-columns: 70% 30%;
-    }
-
-    .youtube-articulo2 {
-        grid-template-columns: 30% 70%;
-    }
-
-    .youtube-articulo3 {
-        grid-template-columns: 70% 30%;
-    }
 
     /*RESPONSIVE "Instagram" 768*/
 
@@ -769,23 +399,6 @@ h1 {
         width: 40px;
     }
 
-    .seccion {
-        height: auto;
-    }
-
-    .seccion-logo {
-        width: 90%;
-    }
-
-    .seccion-div {
-        margin-top: 20px;
-        width: 90%;
-    }
-
-    .seccion-boton {
-        font-size: 18px;
-    }
-
     #menu {
         display: block;
         background-color: white;
@@ -796,7 +409,6 @@ h1 {
         right: -100%;
         z-index: 100;
         transition: right 2s;
-
     }
 
     #menu:target {
@@ -829,65 +441,6 @@ h1 {
         align-items: center;
     }
 
-    .videosPropios {
-        grid-template-rows: 400px 400px 400px;
-
-    }
-
-    .videoPropio-articulo1 {
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 90%;
-        grid-template-areas:
-            "texto1" "video1";
-    }
-
-    .videoPropio-texto1 {
-        justify-self: center;
-        margin: 0;
-    }
-
-    .videoPropio-articulo1 iframe {
-        justify-self: center;
-        width: 100%;
-        margin: 1rem;
-    }
-
-    .videoPropio-articulo2 {
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 90%;
-        grid-template-areas:
-            "texto2" "video2";
-    }
-
-    .videoPropio-texto2 {
-        justify-self: center;
-        margin: 0;
-    }
-
-    .videoPropio-articulo2 iframe {
-        justify-self: center;
-        width: 100%;
-        margin: 1rem;
-    }
-
-    .videoPropio-articulo3 {
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 90%;
-        grid-template-areas:
-            "texto3" "video3";
-    }
-
-    .videoPropio-texto3 {
-        justify-self: center;
-        margin: 0;
-    }
-
-    .videoPropio-articulo3 iframe {
-        justify-self: center;
-        width: 100%;
-        margin: 1rem;
-    }
-
     .intro-logo {
         width: 1.5rem;
         align-self: flex-start;
@@ -907,85 +460,10 @@ h1 {
 
     /*RESPONSIVE "Youtube" 480*/
 
-    .youtube-intro {
-        padding: 0;
-        flex-direction: column-reverse;
-    }
-
-    .youtube-parrafo-titulo {
-        align-items: center;
-    }
-
-    .youtube-videos {
-        grid-template-rows: 400px 400px 400px;
-        gap: 5rem;
-        padding: 1rem;
-    }
-
-    .youtube-iframe {
-        justify-self: center;
-        width: 90vw;
-        margin: 0;
-    }
-
-    .youtube-articulo1 {
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 80%;
-        grid-template-areas:
-            "texto1" "video1";
-    }
-
-    .youtube-texto1 {
-        justify-self: center;
-        margin: 0;
-    }
-
-    .youtube-articulo1 iframe {
-        justify-self: center;
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    .youtube-articulo2 {
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 80%;
-        grid-template-areas:
-            "texto2" "video2";
-    }
-
-    .youtube-texto2 {
-        justify-self: center;
-        margin: 0;
-    }
-
-    .youtube-articulo2 iframe {
-        justify-self: center;
-        width: 100%;
-        margin: 1rem;
-    }
-
-    .youtube-articulo3 {
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 80%;
-        grid-template-areas:
-            "texto3" "video3";
-    }
-
-    .youtube-texto3 {
-        justify-self: center;
-        margin: 0;
-    }
-
-    .youtube-articulo3 iframe {
-        justify-self: center;
-        width: 100%;
-        margin: 1rem;
-    }
 
     .youtube-descripcion {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
-
     .youtube-articulo1 iframe:hover {
         transform: none;
     }
@@ -994,7 +472,7 @@ h1 {
     }
     .youtube-articulo3 iframe:hover {
         transform: none;
-    }
+    } */
 
     /*RESPONSIVE "Instagram" 480*/
 
