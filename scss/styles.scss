@@ -1,0 +1,26 @@
+@import "./parciales/_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400;1,900&display=swap');
+@import "./parciales/_header.scss";
+@import "./parciales/_footer.scss";
+@import "./parciales/_seccion.scss";
+@import "./parciales/_sobremi.scss";
+@import "./parciales/_ilustraciones.scss";
+@import "./parciales/_youtube.scss";
+@import "./parciales/_instagram.scss";
+@import "./parciales/_extras.scss";
+/* Es importante el orden de las medias querys para que se pisen */
+@import "./parciales/_responsive1024.scss";
+@import "./parciales/_responsive768.scss";
+@import "./parciales/_responsive480.scss";
+
+
+
+
+
+
+
+
+
+
+
+

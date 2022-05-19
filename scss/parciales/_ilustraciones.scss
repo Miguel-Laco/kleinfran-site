@@ -1,0 +1,16 @@
+/* ++++ILUSTRACIONES++++*/
+
+/*Finalmente, aplico la galería que tenía planificada en Balsamiq desde Bootstrap*/
+
+.carousel-item img {
+    box-shadow: 0 0 6px black;
+    object-fit: cover;
+    height: 45vw;
+}
+.zapallo img {
+    object-fit: contain;
+}
+
+.galeria {
+    height: 90vw;
+}

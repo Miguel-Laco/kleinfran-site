@@ -1,0 +1,68 @@
+/*Aplico un formato a todo el contenido del header */
+header {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-menu-logo {
+    user-select: none;
+    /*escondo mi item*/
+    display: none;
+}
+
+.header-logo {
+    cursor: pointer;
+    /*cambia el puntero por una mano*/
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.header-nav-lista {
+    list-style: none;
+    /*borro las viñetas*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Alineo los vinculos en el centro*/
+    margin-left: 0px;
+}
+
+.header-nav-link {
+    background-color: white;
+    margin: 0px 2px;
+    padding: 5px 10px;
+
+    & a {
+        padding: 0px 6px;
+        font-family: $fuente-principal;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        /*elimino el guion del vinculo*/
+
+        /* Cambio el color de la letra y el fondo de la caja */
+        &:hover {
+            transition-duration: 0.5s;
+            color: white;
+            background-color: black;
+        }
+    }
+
+    &-close {
+        /*Escondo el boton de cierre de menu celular*/
+        display: none
+    }
+}
+
+
+
+
+

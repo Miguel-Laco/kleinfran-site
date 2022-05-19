@@ -1,0 +1,52 @@
+.footer {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: black;
+
+    &-logofran {
+        cursor: pointer;
+        /*cambia el puntero por una mano*/
+        height: 40px;
+    }
+
+    &-links {
+        list-style: none;
+    
+        & li {
+            display: inline-block;
+            padding: 0px 10px;
+            opacity: 100%;
+            transition: all 0, 3s ease 0s;
+    
+            &:hover {
+                opacity: 60%;
+            }
+    
+            & img {
+                height: 30px;
+            }
+        }
+    }
+
+    &-firma {
+        padding: 0;
+        margin: 0;
+        height: 20px;
+    
+        &-imagen {
+            padding: 0;
+        }
+    }
+}
+
+
+
+
+
+
+

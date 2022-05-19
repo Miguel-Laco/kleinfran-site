@@ -1,0 +1,80 @@
+/* ++++YOUTUBE++++ */
+
+.youtube {
+    margin-top: 2rem;
+
+    & div {
+        justify-content: center;
+    }
+
+    h1 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    &-articulo1 {
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+
+        & h4 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    &-articulo2 {
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+
+        & h4 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    &-articulo3 {
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+
+        & h4 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+}
+
+
+.youtube-articulo1 iframe:hover {
+    transition-duration: 0.2s;
+    transform: scale(110%);
+}
+
+.youtube-articulo2 iframe:hover {
+    transition-duration: 0.2s;
+    transform: scale(110%);
+}
+
+.youtube-articulo3 iframe:hover {
+    transition-duration: 0.2s;
+    transform: scale(110%);
+}

@@ -1,0 +1,16 @@
+@media screen and (max-width: 1024px) {
+
+    .intro-img {
+        max-height: 500px;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .intro-titulo {
+        margin-bottom: 0;
+    }
+
+    .videosPropios iframe {
+        max-width: 90%;
+    }
+}
