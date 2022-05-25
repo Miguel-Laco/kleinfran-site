@@ -26,9 +26,9 @@
 
     &-titulo {
         font-family: $fuente-principal;
-        font-size: 3vw;
+        font-size: map-get($estilo-titulo, tfuente);
+        font-weight: map-get($estilo-titulo, pfuente);
         margin-bottom: 3rem;
-        font-weight: bold;
     }
 
     &-imagen {
@@ -57,14 +57,17 @@
 
         & iframe:hover {
             transition-duration: 0.2s;
-            transform: scale(110%);
+            transform: scale(105%);
         }
 
         & div {
             text-align: center;
         }
         & h2 {
-            font-weight: bold;
+            font-weight: map-get($estilo-titulo, pfuente);
+            font-size: map-get($estilo-titulo, tfuente);
+            color: map-get($estilo-titulo, color);
+            text-align: map-get($estilo-titulo, centro);
         }
     }
 
@@ -75,7 +78,7 @@
 
         & iframe:hover {
             transition-duration: 0.2s;
-            transform: scale(110%);
+            transform: scale(105%);
         }
 
         & div {
@@ -83,7 +86,10 @@
         }
 
         & h2 {
-            font-weight: bold;
+            font-weight: map-get($estilo-titulo, pfuente);
+            font-size: map-get($estilo-titulo, tfuente);
+            color: map-get($estilo-titulo, color);
+            text-align: map-get($estilo-titulo, centro);
         }
     }
     
@@ -94,7 +100,7 @@
 
         & iframe:hover {
             transition-duration: 0.2s;
-            transform: scale(110%);
+            transform: scale(105%);
         }
         
         & div {
@@ -102,7 +108,10 @@
         }
 
         & h2 {
-            font-weight: bold;
+            font-weight: map-get($estilo-titulo, pfuente);
+            font-size: map-get($estilo-titulo, tfuente);
+            color: map-get($estilo-titulo, color);
+            text-align: map-get($estilo-titulo, centro);
         }
     }
     

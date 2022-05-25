@@ -2,9 +2,7 @@
     margin: 0;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexgenerator(row, space-between, center);
     padding: 20px 10px;
     background-color: black;
 

@@ -95,6 +95,9 @@
 
     /*RESPONSIVE "Youtube" 480*/
 
+    .youtube p {
+        font-size: 1rem;
+    }
 
     .youtube-descripcion {
         font-size: 0.8rem;
@@ -111,7 +114,15 @@
 
     /*RESPONSIVE "Instagram" 480*/
 
+    .instagram-intro-nombre {
+        font-size: 1.5rem;
+    }
+
     .instagram-galeria iframe:hover {
-        transform: rotate(0) scale(1.1);
+        transform: none;
+    }
+
+    .instagram-galeria div {
+        margin-top: 0;
     }
 }

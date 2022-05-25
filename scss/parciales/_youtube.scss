@@ -8,8 +8,8 @@
     }
 
     h1 {
-        font-weight: bold;
-        text-align: center;
+        font-weight: map-get($estilo-titulo, pfuente);
+        text-align: map-get($estilo-titulo, centro);
     }
 
     p {
@@ -22,8 +22,8 @@
         margin-top: 5rem;
 
         & h4 {
-            text-align: center;
-            font-weight: bold;
+            font-weight: map-get($estilo-titulo, pfuente);
+            text-align: map-get($estilo-titulo, centro);
         }
 
         & p {
@@ -32,13 +32,11 @@
     }
 
     &-articulo2 {
-        justify-content: center;
-        text-align: center;
-        margin-top: 5rem;
+        @extend .youtube-articulo1;
 
         & h4 {
-            text-align: center;
-            font-weight: bold;
+            font-weight: map-get($estilo-titulo, pfuente);
+            text-align: map-get($estilo-titulo, centro);
         }
 
         & p {
@@ -47,14 +45,12 @@
     }
 
     &-articulo3 {
-        justify-content: center;
-        text-align: center;
-        margin-top: 5rem;
+        @extend .youtube-articulo1;
         margin-bottom: 2rem;
 
         & h4 {
-            text-align: center;
-            font-weight: bold;
+            font-weight: map-get($estilo-titulo, pfuente);
+            text-align: map-get($estilo-titulo, centro);
         }
 
         & p {
@@ -66,15 +62,15 @@
 
 .youtube-articulo1 iframe:hover {
     transition-duration: 0.2s;
-    transform: scale(110%);
+    transform: scale(105%);
 }
 
 .youtube-articulo2 iframe:hover {
     transition-duration: 0.2s;
-    transform: scale(110%);
+    transform: scale(105%);
 }
 
 .youtube-articulo3 iframe:hover {
     transition-duration: 0.2s;
-    transform: scale(110%);
+    transform: scale(105%);
 }

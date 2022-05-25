@@ -52,6 +52,9 @@
 
         /*RESPONSIVE "Instagram" 768*/
 
+        .instagram-galeria div {
+            margin-top: 0;
+        }
         .instagram-galeria iframe:hover {
             transform: rotate(0) scale(1.1);
         }

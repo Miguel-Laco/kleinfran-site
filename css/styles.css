@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*Defino una variable para la fuente principal de la pagina*/
+/*SASS II*/
+/*Defino un MAPA para estandarizar los titulos*/
+/*MIXIN*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400;1,900&display=swap");
 /*Aplico un formato a todo el contenido del header */
 header {
@@ -68,6 +71,7 @@ header {
 .footer {
   margin: 0;
   width: 100%;
+  display: flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,9 +153,9 @@ header {
 
 .intro-titulo {
   font-family: "Poppins", sans-serif;
-  font-size: 3vw;
-  margin-bottom: 3rem;
+  font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 .intro-imagen {
@@ -180,7 +184,7 @@ header {
 
 .videoPropio-articulo1 iframe:hover {
   transition-duration: 0.2s;
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .videoPropio-articulo1 div {
@@ -189,6 +193,9 @@ header {
 
 .videoPropio-articulo1 h2 {
   font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
 }
 
 .videoPropio-articulo2 {
@@ -199,7 +206,7 @@ header {
 
 .videoPropio-articulo2 iframe:hover {
   transition-duration: 0.2s;
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .videoPropio-articulo2 div {
@@ -208,6 +215,9 @@ header {
 
 .videoPropio-articulo2 h2 {
   font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
 }
 
 .videoPropio-articulo3 {
@@ -218,7 +228,7 @@ header {
 
 .videoPropio-articulo3 iframe:hover {
   transition-duration: 0.2s;
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .videoPropio-articulo3 div {
@@ -227,6 +237,9 @@ header {
 
 .videoPropio-articulo3 h2 {
   font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
 }
 
 /* ++++ILUSTRACIONES++++*/
@@ -263,30 +276,24 @@ header {
   text-align: center;
 }
 
-.youtube-articulo1 {
+.youtube-articulo1, .youtube-articulo2, .youtube-articulo3 {
   justify-content: center;
   text-align: center;
   margin-top: 5rem;
 }
 
-.youtube-articulo1 h4 {
-  text-align: center;
+.youtube-articulo1 h4, .youtube-articulo2 h4, .youtube-articulo3 h4 {
   font-weight: bold;
-}
-
-.youtube-articulo1 p {
   text-align: center;
 }
 
-.youtube-articulo2 {
-  justify-content: center;
+.youtube-articulo1 p, .youtube-articulo2 p, .youtube-articulo3 p {
   text-align: center;
-  margin-top: 5rem;
 }
 
 .youtube-articulo2 h4 {
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
 
 .youtube-articulo2 p {
@@ -294,34 +301,31 @@ header {
 }
 
 .youtube-articulo3 {
-  justify-content: center;
-  text-align: center;
-  margin-top: 5rem;
   margin-bottom: 2rem;
 }
 
 .youtube-articulo3 h4 {
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
 
 .youtube-articulo3 p {
   text-align: center;
 }
 
-.youtube-articulo1 iframe:hover {
+.youtube-articulo1 iframe:hover, .youtube-articulo2 iframe:hover, .youtube-articulo3 iframe:hover {
   transition-duration: 0.2s;
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .youtube-articulo2 iframe:hover {
   transition-duration: 0.2s;
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .youtube-articulo3 iframe:hover {
   transition-duration: 0.2s;
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 /* ++++INSTAGRAM++++*/
@@ -362,7 +366,7 @@ header {
 }
 
 .instagram-galeria iframe:hover {
-  transform: rotate(360deg) scale(1.1);
+  transform: scale(1.15);
 }
 
 .instagram section div {
@@ -379,8 +383,6 @@ header {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  width: vw;
-  height: vw;
 }
 
 .rojoyoutube {
@@ -441,6 +443,9 @@ body {
     order: 1 !important;
   }
   /*RESPONSIVE "Instagram" 768*/
+  .instagram-galeria div {
+    margin-top: 0;
+  }
   .instagram-galeria iframe:hover {
     transform: rotate(0) scale(1.1);
   }
@@ -521,10 +526,13 @@ body {
     margin-left: 1rem;
   }
   /*RESPONSIVE "Youtube" 480*/
+  .youtube p {
+    font-size: 1rem;
+  }
   .youtube-descripcion {
     font-size: 0.8rem;
   }
-  .youtube-articulo1 iframe:hover {
+  .youtube-articulo1 iframe:hover, .youtube-articulo2 iframe:hover, .youtube-articulo3 iframe:hover {
     transform: none;
   }
   .youtube-articulo2 iframe:hover {
@@ -534,8 +542,14 @@ body {
     transform: none;
   }
   /*RESPONSIVE "Instagram" 480*/
+  .instagram-intro-nombre {
+    font-size: 1.5rem;
+  }
   .instagram-galeria iframe:hover {
-    transform: rotate(0) scale(1.1);
+    transform: none;
+  }
+  .instagram-galeria div {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
