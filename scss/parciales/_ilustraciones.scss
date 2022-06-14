@@ -11,10 +11,15 @@
     object-fit: contain;
 }
 
-.galeria {
-    height: 100vh;
+.carousel {
+    margin-top: 6rem;
+    margin-bottom: 7rem;
 }
 
-.carousel {
-    margin-top: 10rem;
+.carousel-descripcion {
+text-align: center;
+font-family: $fuente-principal;
+font-size: 3vw;
+margin-bottom: 10px;
+padding: 1rem;
 }
